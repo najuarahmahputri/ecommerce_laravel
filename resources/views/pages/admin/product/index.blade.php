@@ -12,13 +12,13 @@
                 <div class="breadcrumb-item">Produk</div>
             </div>
         </div>
-        <a href="{{ route('product.create') }}" class="btn btn-icon icon-left btnprimary"><i class="fas fa-plus"></i>
+        <a href="{{ route('product.create') }}" class="btn btn-icon icon-left btn-primary"><i class="fas fa-plus"></i>
             Produk</a>
         <div class="card-body">
             <div class="table-responsive">
                 <table class="table table-bordered table-md">
                     <tr>
-                        <th>#</th>
+                        <th>No</th>
                         <th>Nama Produk</th>
                         <th>Harga Produk</th>
                         <th>Action</th>

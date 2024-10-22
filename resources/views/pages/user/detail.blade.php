@@ -3,8 +3,7 @@
 <!-- Start Banner Area -->
 <section class="banner-area organic-breadcrumb">
     <div class="container">
-        <div class="breadcrumb-banner d-flex flex-wrap align-items-center 
-justify-content-end">
+        <div class="breadcrumb-banner d-flex flex-wrap align-items-center-justify-content-end">
             <div class="col-first">
                 <h1>Halaman Detail Produk</h1>
                 <nav class="d-flex align-items-center">
@@ -17,7 +16,6 @@ justify-content-end">
     </div>
 </section>
 <!-- End Banner Area -->
-13
 <section class="section_gap">
     <!--================Single Product Area =================-->
     <div class="product_image_area">
@@ -40,8 +38,7 @@ justify-content-end">
                         </ul>
                         <p>{{ $product->description }}</p>
                         <div class="card_area d-flex align-items-center">
-                            <a class="primary-btn" href="javascript:void(0);" onclick="confirmPurchase('{{ $product->id }}', '{{ Auth::user()->id 
-}}')"> Beli
+                            <a class="primary-btn" href="javascript:void(0);" onclick="confirmPurchase('{{ $product->id }}', '{{ Auth::user()->id}}')"> Beli
                                 Produk</a>
                         </div>
                     </div>
@@ -62,8 +59,7 @@ justify-content-end">
             confirmButtonColor: '#3085d6',
             cancelButtonColor: '#d33',
             confirmButtonText: 'Ya, Beli!',
-            cancelButtonText: 'Batal'
-        }).then((result) => {
+            cancelButtonText: 'Batal'}).then((result) => {
             if (result.isConfirmed) {
                 window.location.href = '/product/purchase/' + productId + '/'
                     + userId;
